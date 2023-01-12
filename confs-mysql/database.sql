@@ -1,18 +1,18 @@
 CREATE TABLE fabricante
 (
-  nome INT NOT NULL,
-  id INT NOT NULL,
-  cnpj INT NOT NULL,
+  id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(100) NOT NULL,
+  cnpj CHAR(14) NOT NULL,
   PRIMARY KEY (id),
   UNIQUE (cnpj)
 );
 
 CREATE TABLE produto
 (
-  nome INT NOT NULL,
+  nome VARCHAR(100) NOT NULL,
   id INT NOT NULL,
-  valor INT NOT NULL,
-  id_fabricante INT NOT NULL,
+  valor FLOAT NOT NULL,
+  id_fabricante INTEGER UNSIGNED NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (id_fabricante) REFERENCES fabricante(id)
 );
