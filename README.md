@@ -52,21 +52,27 @@ Clique [aqui](https://youtu.be/wQw1twyZXlE) para visualizar o vídeo demonstrand
 
 #### Diagrama ER
 
-![DER](confs-mysql/der.png)
+![er](confs-mysql/er.png)
 
 #### Comandos CREATE TABLE
 
 ```sql
-CREATE TABLE Fabricantes (
+CCREATE TABLE fabricante
+(
   id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
-  nome VARCHAR(100) NULL,
-  PRIMARY KEY(id)
+  nome VARCHAR(100) NOT NULL,
+  cnpj CHAR(14) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE (cnpj)
 );
 
-CREATE TABLE Produtos (
+CREATE TABLE produto
+(
   id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
-  nome VARCHAR(100) NULL,
+  nome VARCHAR(100) NOT NULL,
+  valor FLOAT NOT NULL,
   id_fabricante INTEGER UNSIGNED NOT NULL,
-  PRIMARY KEY(id),
-  FOREIGN KEY (id_fabricante) REFERENCES Fabricantes(id)
+  PRIMARY KEY (id),
+  FOREIGN KEY (id_fabricante) REFERENCES fabricante(id)
 );
+```
