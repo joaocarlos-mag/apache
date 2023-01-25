@@ -57,7 +57,7 @@ Clique [aqui](https://youtu.be/wQw1twyZXlE) para visualizar o vídeo demonstrand
 #### Comandos CREATE TABLE
 
 ```sql
-CCREATE TABLE fabricante
+CREATE TABLE fabricante
 (
   id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   nome VARCHAR(100) NOT NULL,
