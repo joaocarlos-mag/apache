@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Acesso restrito WDEV"
+AuthUserFile /var/www/html/fabricanteseprodutos.backend.biz/.htpasswd
+Require valid-user
+

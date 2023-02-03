@@ -10,7 +10,7 @@ Fabricantes e Produtos
 
 ### Video
 
-Clique [aqui](https://youtu.be/wQw1twyZXlE) para visualizar o vídeo demonstrando acesso ao site Frontend e ao site Backend.
+Clique [aqui](https://youtu.be/xpFSltsLHQQ) para visualizar o vídeo demonstrando acesso ao site Frontend e ao site Backend.
 
 ### Configurações do apache2
 
@@ -20,7 +20,7 @@ Clique [aqui](https://youtu.be/wQw1twyZXlE) para visualizar o vídeo demonstrand
 <VirtualHost *:80>
 
     ServerName fabricanteseprodutos.com.br
-    
+
     ServerAdmin joaocarlosm1234@gmail.com
     DocumentRoot /var/www/html/fabricanteseprodutos.com.br/
 
@@ -37,7 +37,7 @@ Clique [aqui](https://youtu.be/wQw1twyZXlE) para visualizar o vídeo demonstrand
 <VirtualHost *:80>
 
     ServerName fabricanteseprodutos.backend.biz
-    
+
     ServerAdmin joaocarlosm1234@gmail.com
     DocumentRoot /var/www/html/fabricanteseprodutos.backend.biz/
 
@@ -69,7 +69,7 @@ CREATE TABLE fabricante
 CREATE TABLE produto
 (
   id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
-  nome VARCHAR(100) NOT NULL,
+  titulo VARCHAR(100) NOT NULL,
   valor FLOAT NOT NULL,
   id_fabricante INTEGER UNSIGNED NOT NULL,
   PRIMARY KEY (id),
