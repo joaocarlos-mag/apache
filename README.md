@@ -10,7 +10,7 @@ Fabricantes e Produtos
 
 ### Video
 
-Clique [aqui](https://youtu.be/xpFSltsLHQQ) para visualizar o vídeo demonstrando acesso ao site Frontend e ao site Backend.
+Clique [aqui](https://youtu.be/UNWNOkNERfc) para visualizar o vídeo demonstrando acesso ao site Frontend e ao site Backend.
 
 ### Configurações do apache2
 
